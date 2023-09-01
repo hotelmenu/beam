@@ -1,0 +1,270 @@
+
+
+body{
+    justify-content: center;  
+    align-items: center;
+    min-height: 100vh;
+    margin-block: auto;
+    padding-inline: 1px;
+    box-sizing: border-box;
+    font-family: 'Fredericka the Great', cursive;
+    background-color: #303030;
+    transition: all 0.5s linear;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    font-size: 2px;
+}
+
+
+.accordion-menu li:last-child .dropdown {
+    border-bottom: 0;
+}
+
+.submenuItems {
+    display: none;
+}
+
+.accordion-menu li.active .submenuItems {
+    display: block;
+}
+
+
+.banner {
+    padding: 1.2%;
+    background-color: #000000;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+}
+
+.img-banner img {
+    max-width: 300px;
+}
+
+
+.small-banner{
+    min-height: 13vh;
+    padding: 1%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  
+}
+
+
+.product {
+    display: flex;
+}
+
+.price {
+    display: flex; 
+    flex-direction: row;
+    flex: 1;
+}
+
+.dropdown, .half {
+    color: #fff;
+}
+
+
+.half {
+    display: block;
+    margin: 5px;
+}
+
+
+
+
+  
+button {
+    font-family: 'Fredericka the Great', sans-serif;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: large;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    align-items: start;
+}
+
+.menu-delay {
+    display: none;
+}
+
+.menu-delay.active {
+    display: block;
+}
+
+.product-title {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 40px;
+}
+
+.img-class {
+    width: 240px;
+    height: 320px; 
+    border-radius: 14px;
+    object-fit: cover; 
+    overflow: hidden;
+    display: none;
+    margin: auto;
+}
+
+.img-class img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.img-class.active {
+    display: block;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+li {
+    margin-top: 5%;
+}
+
+
+.red {
+    color: #fff;
+    --skew-angle: -5deg; 
+    position: relative;
+    isolation: isolate;
+}
+
+
+.red::after {
+    content: '';
+    position: absolute; 
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+    background: rgb(180,58,58);
+    background: linear-gradient(60deg, rgba(180,58,58,1) 0%, rgba(148,28,28,1) 25%, rgba(143,23,23,1) 50%, rgba(126,10,10,1) 75%, rgba(80,0,0,1) 100%);
+}
+.grey {
+    --skew-angle: -5deg; 
+    position: relative;
+    isolation: isolate;
+}
+
+.grey::after {
+    content: '';
+    position: absolute; 
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+    background: rgb(60,60,60);
+    background: linear-gradient(120deg, rgba(60,60,60,1) 0%, rgba(50,50,50,1) 25%, rgba(20,20,20,1) 50%, rgba(22,22,22,1) 75%, rgba(0,0,0,1) 100%);
+}
+
+.white {
+    color: #FFFFFF;
+    --skew-angle: -5deg; 
+    position: relative;
+    isolation: isolate;
+}
+
+.white::after {
+    content: '';
+    position: absolute; 
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+    background: rgb(180,58,58);
+    background: linear-gradient(60deg, rgba(180,58,58,1) 0%, rgba(148,28,28,1) 25%, rgba(143,23,23,1) 50%, rgba(126,10,10,1) 75%, rgba(80,0,0,1) 100%);
+}
+
+.blue {
+    color: #fff;
+    --skew-angle: -5deg; 
+    position: relative;
+    isolation: isolate;
+}
+
+.blue::after {
+    content: '';
+    position: absolute; 
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+    background: rgb(60,60,60);
+    background: linear-gradient(120deg, rgba(60,60,60,1) 0%, rgba(50,50,50,1) 25%, rgba(20,20,20,1) 50%, rgba(22,22,22,1) 75%, rgba(0,0,0,1) 100%);
+}
+
+
+.brown {
+    color: #FFFFFF;
+    --skew-angle: -5deg; 
+    position: relative;
+    isolation: isolate;
+}
+
+.brown::after {
+    content: '';
+    position: absolute; 
+    inset: 0;
+    transform: skewY(var(--skew-angle));
+    z-index: -1;
+    background: rgb(180,58,58);
+    background: linear-gradient(60deg, rgba(180,58,58,1) 0%, rgba(148,28,28,1) 25%, rgba(143,23,23,1) 50%, rgba(126,10,10,1) 75%, rgba(80,0,0,1) 100%);
+}
+
+
+
+/* text styling  */
+
+
+.banner h1 {
+    font-size: 60px;
+}
+
+.banner p {
+    font-size: 28px;
+}
+
+.dropdown {
+    font-size: 24px;
+}
+
+.item {
+    font-size: 20px;
+    width: 80%;
+}
+.half p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.two {
+    text-align: center;
+    font-size: 28px;
+}
+
+.two a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.half {
+    display: block;
+}
+.subs {
+    font-size: 16px;
+}
+
+/* <!-- Jesus is King  --> */
